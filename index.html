@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PC CONFIGS</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f1117;
+            color: white;
+        }
+
+        header {
+            padding: 30px;
+            text-align: center;
+            background: #151923;
+            border-bottom: 1px solid #252b38;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #9ca3af;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .search {
+            width: 100%;
+            padding: 16px;
+            border-radius: 10px;
+            border: 1px solid #303746;
+            background: #181c25;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .category {
+            background: #181c25;
+            border: 1px solid #292f3c;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+            border-color: #5865f2;
+        }
+
+        .category .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .category h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .category p {
+            color: #9ca3af;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #6b7280;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🖥️ PC CONFIGS</h1>
+        <p>Les meilleurs composants au meilleur prix</p>
+    </header>
+
+    <div class="container">
+
+        <input
+            class="search"
+            type="text"
+            placeholder="🔎 Rechercher un composant..."
+        >
+
+        <div class="categories">
+
+            <div class="category">
+                <div class="icon">🧠</div>
+                <h2>Processeurs</h2>
+                <p>AMD & Intel</p>
+            </div>
+
+            <div class="category">
+                <div class="icon">🎮</div>
+                <h2>Cartes graphiques</h2>
+                <p>NVIDIA & AMD</p>
+            </div>
+
+            <div class="category">
+                <div class="icon">🧩</div>
+                <h2>Cartes mères</h2>
+                <p>AM4, AM5, Intel...</p>
+            </div>
+
+            <div class="category">
+                <div class="icon">💾</div>
+                <h2>RAM</h2>
+                <p>DDR4 & DDR5</p>
+            </div>
+
+            <div class="category">
+                <div class="icon">⚡</div>
+                <h2>SSD</h2>
+                <p>Stockage rapide</p>
+            </div>
+
+            <div class="category">
+                <div class="icon">🔌</div>
+                <h2>Alimentations</h2>
+                <p>Certifiées 80+ Gold...</p>
+            </div>
+
+            <div class="category">
+                <div class="icon">❄️</div>
+                <h2>Refroidissement</h2>
+                <p>Ventirads & Watercooling</p>
+            </div>
+
+            <div class="category">
+                <div class="icon">📦</div>
+                <h2>Boîtiers</h2>
+                <p>ATX, Micro-ATX...</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        PC CONFIGS • Comparateur de composants PC
+    </footer>
+
+</body>
+</html>
