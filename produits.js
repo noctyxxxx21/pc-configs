@@ -59,17 +59,17 @@ const produits = [
         categorie: "Processeurs",
         specs: "8 cœurs / 16 threads • AM5",
         vendeurs: [
-            {
-                nom: "Cdiscount",
-                prix: 316.99,
-                lien: "#"
-            },
-            {
-                nom: "Amazon",
-                prix: 369.20,
-                lien: "#"
-            }
-        ]
+    {
+        nom: "Cdiscount",
+        prix: 326.99,
+        lien: "https://www.cdiscount.com/informatique/processeurs/processeur-amd-ryzen-7-7800x3d/f-10764-100100000910wof.html"
+    },
+    {
+        nom: "Amazon",
+        prix: 339.00,
+        lien: "https://www.amazon.fr/-/en/AMD-Ryzen-7800X3D-Technology-Integrated/dp/B0BTZB7F88"
+    }
+]
     },
 
     {
