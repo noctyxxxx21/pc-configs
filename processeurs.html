@@ -126,6 +126,13 @@
     text-decoration: none;
     padding: 7px 10px;
     border-radius: 6px;
+
+    .verified {
+    color: #9ca3af;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
 }
         }
     </style>
@@ -214,6 +221,10 @@
 
                     <p class="best">
                         🏆 Meilleur prix chez ${meilleurPrix.nom}
+                    </p>
+                    
+                    <p class="verified">
+                        🕐 Prix vérifié le ${produit.prixVerifie}
                     </p>
 
                     <div class="sellers">
