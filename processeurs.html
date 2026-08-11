@@ -112,10 +112,11 @@
 <div class="container">
 
     <input
-        class="search"
-        type="text"
-        placeholder="🔎 Rechercher un processeur..."
-    >
+    class="search"
+    id="search"
+    type="text"
+    placeholder="🔎 Rechercher un processeur..."
+>
 
     <div class="products">
 
@@ -184,6 +185,23 @@
     </div>
 
 </div>
+<script>
+    const search = document.getElementById("search");
+    const products = document.querySelectorAll(".product");
 
+    search.addEventListener("input", function () {
+        const text = search.value.toLowerCase();
+
+        products.forEach(product => {
+            const name = product.querySelector("h2").textContent.toLowerCase();
+
+            if (name.includes(text)) {
+                product.style.display = "";
+            } else {
+                product.style.display = "none";
+            }
+        });
+    });
+</script>
 </body>
 </html>
