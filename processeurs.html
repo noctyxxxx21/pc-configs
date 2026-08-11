@@ -161,67 +161,74 @@
     const search = document.getElementById("search");
 
     function afficherProduits(liste) {
+
         container.innerHTML = "";
 
         liste
             .filter(produit => produit.categorie === "Processeurs")
             .forEach(produit => {
 
-                const vendeurMoinsCher = produit.vendeurs.reduce(
-                    (moinsCher, vendeur) =>
-                        vendeur.prix < moinsCher.prix ? vendeur : moinsCher
-                );
+                const vendeurs = [...produit.vendeurs]
+                    .sort((a, b) => a.prix - b.prix);
 
-                const card = document.createElement("div");
-                card.className = "product";
+                const meilleurPrix = vendeurs[0];
 
                 let vendeursHTML = "";
 
-produit.vendeurs
-    .sort((a, b) => a.prix - b.prix)
-    .forEach((vendeur, index) => {
+                vendeurs.forEach((vendeur, index) => {
 
-        vendeursHTML += `
-            <div class="seller">
-                <span>
-                    ${index === 0 ? "🏆 " : "🛒 "}
-                    ${vendeur.nom}
-                </span>
+                    vendeursHTML += `
+                        <div class="seller">
 
-                <strong>
-                    ${vendeur.prix.toFixed(2).replace(".", ",")} €
-                </strong>
+                            <span>
+                                ${index === 0 ? "🏆" : "🛒"}
+                                ${vendeur.nom}
+                            </span>
 
-                <a href="${vendeur.lien}" target="_blank">
-                    Acheter
-                </a>
-            </div>
-        `;
-    });
+                            <strong>
+                                ${vendeur.prix.toFixed(2).replace(".", ",")} €
+                            </strong>
 
-card.innerHTML = `
-    <h2>${produit.nom}</h2>
+                            <a href="${vendeur.lien}" target="_blank">
+                                Acheter
+                            </a>
 
-    <p class="specs">
-        ${produit.specs}
-    </p>
+                        </div>
+                    `;
+                });
 
-    <p class="price">
-        ${vendeurMoinsCher.prix.toFixed(2).replace(".", ",")} €
-    </p>
+                const card = document.createElement("div");
 
-    <p class="best">
-        🏆 Meilleur prix chez ${vendeurMoinsCher.nom}
-    </p>
+                card.className = "product";
 
-    <div class="sellers">
-        ${vendeursHTML}
-    </div>
-`;
+                card.innerHTML = `
+                    <h2>${produit.nom}</h2>
+
+                    <p class="specs">
+                        ${produit.specs}
+                    </p>
+
+                    <p class="price">
+                        ${meilleurPrix.prix.toFixed(2).replace(".", ",")} €
+                    </p>
+
+                    <p class="best">
+                        🏆 Meilleur prix chez ${meilleurPrix.nom}
+                    </p>
+
+                    <div class="sellers">
+                        ${vendeursHTML}
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+    }
 
     afficherProduits(produits);
 
     search.addEventListener("input", function () {
+
         const texte = search.value.toLowerCase();
 
         const resultat = produits.filter(produit =>
