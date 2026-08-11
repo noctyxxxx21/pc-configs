@@ -120,87 +120,70 @@
 
     <div class="products">
 
-        <div class="product">
-            <h2>AMD Ryzen 5 7600</h2>
-
-            <p class="specs">
-                6 cœurs / 12 threads • AM5
-            </p>
-
-            <p class="price">
-                159,99 €
-            </p>
-
-            <p class="best">
-                🏆 Meilleur prix
-            </p>
-
-            <a class="buy" href="#" target="_blank">
-                🛒 Voir le vendeur
-            </a>
-        </div>
-
-
-        <div class="product">
-            <h2>AMD Ryzen 7 7800X3D</h2>
-
-            <p class="specs">
-                8 cœurs / 16 threads • AM5
-            </p>
-
-            <p class="price">
-                349,99 €
-            </p>
-
-            <p class="best">
-                🏆 Meilleur prix
-            </p>
-
-            <a class="buy" href="#" target="_blank">
-                🛒 Voir le vendeur
-            </a>
-        </div>
-
-
-        <div class="product">
-            <h2>AMD Ryzen 7 9800X3D</h2>
-
-            <p class="specs">
-                8 cœurs / 16 threads • AM5
-            </p>
-
-            <p class="price">
-                449,99 €
-            </p>
-
-            <p class="best">
-                🏆 Meilleur prix
-            </p>
-
-            <a class="buy" href="#" target="_blank">
-                🛒 Voir le vendeur
-            </a>
         </div>
 
     </div>
 
 </div>
+<script src="produits.js"></script>
+
 <script>
+    const container = document.querySelector(".products");
     const search = document.getElementById("search");
-    const products = document.querySelectorAll(".product");
+
+    function afficherProduits(liste) {
+        container.innerHTML = "";
+
+        liste
+            .filter(produit => produit.categorie === "Processeurs")
+            .forEach(produit => {
+
+                const vendeurMoinsCher = produit.vendeurs.reduce(
+                    (moinsCher, vendeur) =>
+                        vendeur.prix < moinsCher.prix ? vendeur : moinsCher
+                );
+
+                const card = document.createElement("div");
+                card.className = "product";
+
+                card.innerHTML = `
+                    <h2>${produit.nom}</h2>
+
+                    <p class="specs">
+                        ${produit.specs}
+                    </p>
+
+                    <p class="price">
+                        ${vendeurMoinsCher.prix.toFixed(2).replace(".", ",")} €
+                    </p>
+
+                    <p class="best">
+                        🏆 Meilleur prix chez ${vendeurMoinsCher.nom}
+                    </p>
+
+                    <a
+                        class="buy"
+                        href="${vendeurMoinsCher.lien}"
+                        target="_blank"
+                    >
+                        🛒 Voir le meilleur prix
+                    </a>
+                `;
+
+                container.appendChild(card);
+            });
+    }
+
+    afficherProduits(produits);
 
     search.addEventListener("input", function () {
-        const text = search.value.toLowerCase();
+        const texte = search.value.toLowerCase();
 
-        products.forEach(product => {
-            const name = product.querySelector("h2").textContent.toLowerCase();
+        const resultat = produits.filter(produit =>
+            produit.nom.toLowerCase().includes(texte)
+        );
 
-            if (name.includes(text)) {
-                product.style.display = "";
-            } else {
-                product.style.display = "none";
-            }
-        });
+        afficherProduits(resultat);
     });
 </script>
 </body>
