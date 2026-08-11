@@ -6,7 +6,7 @@ const produits = [
         vendeurs: [
             {
                 nom: "Amazon",
-                prix: 159.99,
+                prix: 180.41,
                 lien: "#"
             },
             {
@@ -24,7 +24,7 @@ const produits = [
         vendeurs: [
             {
                 nom: "Amazon",
-                prix: 349.99,
+                prix: 316.99,
                 lien: "#"
             },
             {
@@ -42,7 +42,7 @@ const produits = [
         vendeurs: [
             {
                 nom: "Amazon",
-                prix: 449.99,
+                prix: 418.90,
                 lien: "#"
             },
             {
