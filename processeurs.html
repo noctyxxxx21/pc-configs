@@ -98,6 +98,35 @@
 
         .buy:hover {
             background: #4752c4;
+            
+            .sellers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.seller {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    background: #10131a;
+    border-radius: 8px;
+}
+
+.seller strong {
+    white-space: nowrap;
+}
+
+.seller a {
+    background: #5865f2;
+    color: white;
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 6px;
+}
         }
     </style>
 </head>
@@ -146,33 +175,49 @@
                 const card = document.createElement("div");
                 card.className = "product";
 
-                card.innerHTML = `
-                    <h2>${produit.nom}</h2>
+                let vendeursHTML = "";
 
-                    <p class="specs">
-                        ${produit.specs}
-                    </p>
+produit.vendeurs
+    .sort((a, b) => a.prix - b.prix)
+    .forEach((vendeur, index) => {
 
-                    <p class="price">
-                        ${vendeurMoinsCher.prix.toFixed(2).replace(".", ",")} €
-                    </p>
+        vendeursHTML += `
+            <div class="seller">
+                <span>
+                    ${index === 0 ? "🏆 " : "🛒 "}
+                    ${vendeur.nom}
+                </span>
 
-                    <p class="best">
-                        🏆 Meilleur prix chez ${vendeurMoinsCher.nom}
-                    </p>
+                <strong>
+                    ${vendeur.prix.toFixed(2).replace(".", ",")} €
+                </strong>
 
-                    <a
-                        class="buy"
-                        href="${vendeurMoinsCher.lien}"
-                        target="_blank"
-                    >
-                        🛒 Voir le meilleur prix
-                    </a>
-                `;
+                <a href="${vendeur.lien}" target="_blank">
+                    Acheter
+                </a>
+            </div>
+        `;
+    });
 
-                container.appendChild(card);
-            });
-    }
+card.innerHTML = `
+    <h2>${produit.nom}</h2>
+
+    <p class="specs">
+        ${produit.specs}
+    </p>
+
+    <p class="price">
+        ${vendeurMoinsCher.prix.toFixed(2).replace(".", ",")} €
+    </p>
+
+    <p class="best">
+        🏆 Meilleur prix chez ${vendeurMoinsCher.nom}
+    </p>
+
+    <div class="sellers">
+        ${vendeursHTML}
+    </div>
+`;
 
     afficherProduits(produits);
 
