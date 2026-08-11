@@ -58,6 +58,7 @@ const produits = [
         nom: "AMD Ryzen 7 7800X3D",
         categorie: "Processeurs",
         specs: "8 cœurs / 16 threads • AM5",
+        prixVerifie: "11/08/2026",
         vendeurs: [
     {
         nom: "Cdiscount",
