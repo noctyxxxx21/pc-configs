@@ -57,13 +57,24 @@ const produits = [
     },
 
     {
+        nom: "AMD Ryzen 5 9600X",
+        categorie: "Processeurs",
+        specs: "6 cœurs / 12 threads • AM5",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            { nom: "Cdiscount", prix: 175.38, lien: "#" },
+            { nom: "Amazon", prix: 183.37, lien: "#" }
+        ]
+    },
+
+    {
         nom: "AMD Ryzen 7 9700X",
         categorie: "Processeurs",
         specs: "8 cœurs / 16 threads • AM5",
         prixVerifie: "12/08/2026",
         vendeurs: [
-            { nom: "Cdiscount", prix: 235.99, lien: "#" },
-            { nom: "Amazon", prix: 288.80, lien: "#" }
+            { nom: "Cdiscount", prix: 242.64, lien: "#" },
+            { nom: "Amazon", prix: 265.90, lien: "#" }
         ]
     },
 
@@ -75,6 +86,28 @@ const produits = [
         vendeurs: [
             { nom: "Amazon", prix: 418.90, lien: "#" },
             { nom: "Cdiscount", prix: 465.26, lien: "#" }
+        ]
+    },
+
+    {
+        nom: "AMD Ryzen 9 9900X",
+        categorie: "Processeurs",
+        specs: "12 cœurs / 24 threads • AM5",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            { nom: "Cdiscount", prix: 329.00, lien: "#" },
+            { nom: "Amazon", prix: 338.90, lien: "#" }
+        ]
+    },
+
+    {
+        nom: "AMD Ryzen 9 9950X",
+        categorie: "Processeurs",
+        specs: "16 cœurs / 32 threads • AM5",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            { nom: "Achatmoinscher", prix: 490.49, lien: "#" },
+            { nom: "Amazon", prix: 533.52, lien: "#" }
         ]
     },
 
@@ -121,39 +154,6 @@ const produits = [
     },
 
     {
-        nom: "AMD Ryzen 5 9600X",
-        categorie: "Processeurs",
-        specs: "6 cœurs / 12 threads • AM5",
-        prixVerifie: "12/08/2026",
-        vendeurs: [
-            { nom: "Cdiscount", prix: 175.38, lien: "#" },
-            { nom: "Amazon", prix: 183.37, lien: "#" }
-        ]
-    },
-
-    {
-        nom: "AMD Ryzen 9 9900X",
-        categorie: "Processeurs",
-        specs: "12 cœurs / 24 threads • AM5",
-        prixVerifie: "12/08/2026",
-        vendeurs: [
-            { nom: "Cdiscount", prix: 329.00, lien: "#" },
-            { nom: "Amazon", prix: 338.90, lien: "#" }
-        ]
-    },
-
-    {
-        nom: "AMD Ryzen 9 9950X",
-        categorie: "Processeurs",
-        specs: "16 cœurs / 32 threads • AM5",
-        prixVerifie: "12/08/2026",
-        vendeurs: [
-            { nom: "Achatmoinscher", prix: 490.49, lien: "#" },
-            { nom: "Amazon", prix: 533.52, lien: "#" }
-        ]
-    },
-
-    {
         nom: "Intel Core i5-14600KF",
         categorie: "Processeurs",
         specs: "14 cœurs / 20 threads • LGA1700",
@@ -174,7 +174,6 @@ const produits = [
             { nom: "Alternate", prix: 381.00, lien: "#" }
         ]
     },
-
 
     // =========================
     // CARTES GRAPHIQUES
@@ -312,7 +311,6 @@ const produits = [
         ]
     },
 
-
     // =========================
     // CARTES MÈRES
     // =========================
@@ -427,7 +425,6 @@ const produits = [
         ]
     },
 
-
     // =========================
     // RAM
     // =========================
@@ -541,7 +538,6 @@ const produits = [
             { nom: "Cdiscount", prix: 199.99, lien: "#" }
         ]
     },
-
 
     // =========================
     // SSD
