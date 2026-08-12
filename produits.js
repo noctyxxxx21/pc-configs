@@ -900,4 +900,195 @@ const produits = [
             }
         ]
     }
+        ,
+
+    {
+        nom: "Lexar NM790 1 To",
+        categorie: "SSD",
+        specs: "1 To • NVMe PCIe 4.0 • Jusqu'à 7400 Mo/s",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 69.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 74.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Lexar NM790 2 To",
+        categorie: "SSD",
+        specs: "2 To • NVMe PCIe 4.0 • Jusqu'à 7400 Mo/s",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 119.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 129.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "WD Black SN850X 1 To",
+        categorie: "SSD",
+        specs: "1 To • NVMe PCIe 4.0 • Jusqu'à 7300 Mo/s",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 79.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 89.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "WD Black SN850X 2 To",
+        categorie: "SSD",
+        specs: "2 To • NVMe PCIe 4.0 • Jusqu'à 7300 Mo/s",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 139.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 149.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Samsung 990 PRO 1 To",
+        categorie: "SSD",
+        specs: "1 To • NVMe PCIe 4.0 • Jusqu'à 7450 Mo/s",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 89.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 99.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Samsung 990 PRO 2 To",
+        categorie: "SSD",
+        specs: "2 To • NVMe PCIe 4.0 • Jusqu'à 7450 Mo/s",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 159.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 169.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Crucial T500 1 To",
+        categorie: "SSD",
+        specs: "1 To • NVMe PCIe 4.0 • Jusqu'à 7400 Mo/s",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 74.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 84.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Crucial T500 2 To",
+        categorie: "SSD",
+        specs: "2 To • NVMe PCIe 4.0 • Jusqu'à 7400 Mo/s",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 129.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 139.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Samsung 9100 PRO 1 To",
+        categorie: "SSD",
+        specs: "1 To • NVMe PCIe 5.0 • Jusqu'à 14 700 Mo/s",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 159.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 169.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Samsung 9100 PRO 2 To",
+        categorie: "SSD",
+        specs: "2 To • NVMe PCIe 5.0 • Jusqu'à 14 700 Mo/s",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 249.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 269.99,
+                lien: "#"
+            }
+        ]
+    }
 ];
