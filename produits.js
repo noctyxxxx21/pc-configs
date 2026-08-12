@@ -518,4 +518,195 @@ const produits = [
             }
         ]
     }
+        ,
+
+    {
+        nom: "MSI B550-A PRO",
+        categorie: "Cartes mères",
+        specs: "ATX • AM4 • B550 • DDR4",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 119.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 124.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "ASUS TUF Gaming B550-PLUS",
+        categorie: "Cartes mères",
+        specs: "ATX • AM4 • B550 • DDR4",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 129.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 134.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "MSI MAG B650 TOMAHAWK WIFI",
+        categorie: "Cartes mères",
+        specs: "ATX • AM5 • B650 • DDR5 • Wi-Fi",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 189.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 199.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "ASUS TUF Gaming B650-PLUS WIFI",
+        categorie: "Cartes mères",
+        specs: "ATX • AM5 • B650 • DDR5 • Wi-Fi",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 194.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 209.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "ASRock B650M Pro RS",
+        categorie: "Cartes mères",
+        specs: "Micro-ATX • AM5 • B650 • DDR5",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 139.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 149.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "MSI PRO B650-S WIFI",
+        categorie: "Cartes mères",
+        specs: "ATX • AM5 • B650 • DDR5 • Wi-Fi",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 159.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 169.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "MSI MAG B650M MORTAR WIFI",
+        categorie: "Cartes mères",
+        specs: "Micro-ATX • AM5 • B650 • DDR5 • Wi-Fi",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 169.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 179.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "ASUS ROG STRIX B650E-F GAMING WIFI",
+        categorie: "Cartes mères",
+        specs: "ATX • AM5 • B650E • DDR5 • Wi-Fi",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 229.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 239.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "MSI MAG B850 TOMAHAWK MAX WIFI",
+        categorie: "Cartes mères",
+        specs: "ATX • AM5 • B850 • DDR5 • Wi-Fi",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 229.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 239.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "ASUS ROG STRIX X870-F GAMING WIFI",
+        categorie: "Cartes mères",
+        specs: "ATX • AM5 • X870 • DDR5 • Wi-Fi",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 299.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 319.99,
+                lien: "#"
+            }
+        ]
+    }
 ];
