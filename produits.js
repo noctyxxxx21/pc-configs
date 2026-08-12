@@ -709,4 +709,195 @@ const produits = [
             }
         ]
     }
+        ,
+
+    {
+        nom: "Corsair Vengeance LPX 16 Go (2x8 Go) DDR4-3200",
+        categorie: "RAM",
+        specs: "16 Go • 2x8 Go • DDR4 • 3200 MHz • CL16",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 39.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 44.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Corsair Vengeance LPX 32 Go (2x16 Go) DDR4-3200",
+        categorie: "RAM",
+        specs: "32 Go • 2x16 Go • DDR4 • 3200 MHz • CL16",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 69.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 74.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Kingston Fury Beast 32 Go (2x16 Go) DDR4-3200",
+        categorie: "RAM",
+        specs: "32 Go • 2x16 Go • DDR4 • 3200 MHz • CL16",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 64.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 69.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Corsair Vengeance 32 Go (2x16 Go) DDR5-6000 CL36",
+        categorie: "RAM",
+        specs: "32 Go • 2x16 Go • DDR5 • 6000 MHz • CL36",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 84.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 89.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Corsair Vengeance RGB 32 Go (2x16 Go) DDR5-6000 CL36",
+        categorie: "RAM",
+        specs: "32 Go • 2x16 Go • DDR5 • 6000 MHz • CL36 • RGB",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 94.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 99.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Kingston Fury Beast 32 Go (2x16 Go) DDR5-6000",
+        categorie: "RAM",
+        specs: "32 Go • 2x16 Go • DDR5 • 6000 MHz",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 79.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 89.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "G.Skill Flare X5 32 Go (2x16 Go) DDR5-6000 CL30",
+        categorie: "RAM",
+        specs: "32 Go • 2x16 Go • DDR5 • 6000 MHz • CL30 • AMD EXPO",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 99.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 109.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "G.Skill Trident Z5 Neo RGB 32 Go DDR5-6000 CL30",
+        categorie: "RAM",
+        specs: "32 Go • 2x16 Go • DDR5 • 6000 MHz • CL30 • RGB • AMD EXPO",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 119.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 129.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "Corsair Vengeance 64 Go (2x32 Go) DDR5-6000",
+        categorie: "RAM",
+        specs: "64 Go • 2x32 Go • DDR5 • 6000 MHz",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 159.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 169.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "G.Skill Trident Z5 Neo RGB 64 Go DDR5-6000 CL30",
+        categorie: "RAM",
+        specs: "64 Go • 2x32 Go • DDR5 • 6000 MHz • CL30 • RGB • AMD EXPO",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 189.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 199.99,
+                lien: "#"
+            }
+        ]
+    }
 ];
