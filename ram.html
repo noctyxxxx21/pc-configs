@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RAM - PC CONFIGS</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f1117;
+            color: white;
+        }
+
+        header {
+            padding: 30px;
+            background: #151923;
+            border-bottom: 1px solid #252b38;
+        }
+
+        header a {
+            color: #9ca3af;
+            text-decoration: none;
+        }
+
+        header h1 {
+            margin-top: 15px;
+            font-size: 32px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .search {
+            width: 100%;
+            padding: 16px;
+            border-radius: 10px;
+            border: 1px solid #303746;
+            background: #181c25;
+            color: white;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: #181c25;
+            border: 1px solid #292f3c;
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        .product h2 {
+            margin-bottom: 10px;
+        }
+
+        .specs {
+            color: #9ca3af;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .best {
+            color: #4ade80;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .sellers {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .seller {
+            display: grid;
+            grid-template-columns: 1fr auto auto;
+            gap: 10px;
+            align-items: center;
+            padding: 10px;
+            background: #10131a;
+            border-radius: 8px;
+        }
+
+        .seller strong {
+            white-space: nowrap;
+        }
+
+        .seller a {
+            background: #5865f2;
+            color: white;
+            text-decoration: none;
+            padding: 7px 10px;
+            border-radius: 6px;
+        }
+
+        .seller a:hover {
+            background: #4752c4;
+        }
+
+        .verified {
+            color: #9ca3af;
+            font-size: 13px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a href="index.html">← Retour aux catégories</a>
+    <h1>🧠 RAM</h1>
+</header>
+
+<div class="container">
+
+    <input
+        class="search"
+        id="search"
+        type="text"
+        placeholder="🔎 Rechercher de la RAM..."
+    >
+
+    <div class="products"></div>
+
+</div>
+
+<script src="produits.js"></script>
+
+<script>
+    const container = document.querySelector(".products");
+    const search = document.getElementById("search");
+
+    function afficherProduits(liste) {
+
+        container.innerHTML = "";
+
+        liste
+            .filter(produit => produit.categorie === "RAM")
+            .forEach(produit => {
+
+                const vendeurs = [...produit.vendeurs]
+                    .sort((a, b) => a.prix - b.prix);
+
+                const meilleurPrix = vendeurs[0];
+
+                let vendeursHTML = "";
+
+                vendeurs.forEach((vendeur, index) => {
+
+                    vendeursHTML += `
+                        <div class="seller">
+
+                            <span>
+                                ${index === 0 ? "🏆" : "🛒"}
+                                ${vendeur.nom}
+                            </span>
+
+                            <strong>
+                                ${vendeur.prix.toFixed(2).replace(".", ",")} €
+                            </strong>
+
+                            <a href="${vendeur.lien}" target="_blank">
+                                Acheter
+                            </a>
+
+                        </div>
+                    `;
+                });
+
+                const card = document.createElement("div");
+
+                card.className = "product";
+
+                card.innerHTML = `
+                    <h2>${produit.nom}</h2>
+
+                    <p class="specs">
+                        ${produit.specs}
+                    </p>
+
+                    <p class="price">
+                        ${meilleurPrix.prix.toFixed(2).replace(".", ",")} €
+                    </p>
+
+                    <p class="best">
+                        🏆 Meilleur prix chez ${meilleurPrix.nom}
+                    </p>
+
+                    <p class="verified">
+                        🕐 Prix vérifié le ${produit.prixVerifie}
+                    </p>
+
+                    <div class="sellers">
+                        ${vendeursHTML}
+                    </div>
+                `;
+
+                container.appendChild(card);
+            });
+    }
+
+    afficherProduits(produits);
+
+    search.addEventListener("input", function () {
+
+        const texte = search.value.toLowerCase();
+
+        const resultat = produits.filter(produit =>
+            produit.nom.toLowerCase().includes(texte)
+        );
+
+        afficherProduits(resultat);
+    });
+</script>
+
+</body>
+</html>
