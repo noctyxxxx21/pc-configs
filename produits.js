@@ -289,4 +289,233 @@ const produits = [
             }
         ]
     }
+        ,
+
+    {
+        nom: "NVIDIA GeForce RTX 4060",
+        categorie: "Cartes graphiques",
+        specs: "8 Go GDDR6 • 3072 CUDA Cores",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 299.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 309.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "NVIDIA GeForce RTX 4060 Ti 8 Go",
+        categorie: "Cartes graphiques",
+        specs: "8 Go GDDR6 • 4352 CUDA Cores",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 389.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 399.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "NVIDIA GeForce RTX 4070",
+        categorie: "Cartes graphiques",
+        specs: "12 Go GDDR6X • 5888 CUDA Cores",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 549.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 569.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "NVIDIA GeForce RTX 4070 SUPER",
+        categorie: "Cartes graphiques",
+        specs: "12 Go GDDR6X • 7168 CUDA Cores",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 599.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 619.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "NVIDIA GeForce RTX 4070 Ti SUPER",
+        categorie: "Cartes graphiques",
+        specs: "16 Go GDDR6X • 8448 CUDA Cores",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 799.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 829.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "NVIDIA GeForce RTX 4080 SUPER",
+        categorie: "Cartes graphiques",
+        specs: "16 Go GDDR6X • 10240 CUDA Cores",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 999.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 1049.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "NVIDIA GeForce RTX 4090",
+        categorie: "Cartes graphiques",
+        specs: "24 Go GDDR6X • 16384 CUDA Cores",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 1899.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 1949.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "AMD Radeon RX 7600",
+        categorie: "Cartes graphiques",
+        specs: "8 Go GDDR6 • 2048 Stream Processors",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 259.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 269.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "AMD Radeon RX 7700 XT",
+        categorie: "Cartes graphiques",
+        specs: "12 Go GDDR6 • 3456 Stream Processors",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 399.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 419.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "AMD Radeon RX 7800 XT",
+        categorie: "Cartes graphiques",
+        specs: "16 Go GDDR6 • 3840 Stream Processors",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 479.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 499.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "AMD Radeon RX 7900 XT",
+        categorie: "Cartes graphiques",
+        specs: "20 Go GDDR6 • 5376 Stream Processors",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 699.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 729.99,
+                lien: "#"
+            }
+        ]
+    },
+
+    {
+        nom: "AMD Radeon RX 9070 XT",
+        categorie: "Cartes graphiques",
+        specs: "16 Go GDDR6 • RDNA 4",
+        prixVerifie: "12/08/2026",
+        vendeurs: [
+            {
+                nom: "Amazon",
+                prix: 649.99,
+                lien: "#"
+            },
+            {
+                nom: "Cdiscount",
+                prix: 679.99,
+                lien: "#"
+            }
+        ]
+    }
 ];
